@@ -6,7 +6,7 @@
 		function updateBalance() {
 			var balance = parseInt(localStorage.getItem("balance"));
 			if (isNaN(balance)) {
-				balance = 10000000000;
+				balance = 0;
 				localStorage.setItem("balance", balance.toString());
 			}
 			document.getElementById("balance").innerHTML = balance;
@@ -19,7 +19,7 @@
 
 			var balance = parseInt(localStorage.getItem("balance"));
 			if (isNaN(balance)) {
-				balance = 10000000000;
+				balance = 0;
 				localStorage.setItem("balance", balance.toString());
 			}
 			if (balance < value) {
